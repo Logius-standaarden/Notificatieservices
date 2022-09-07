@@ -8,18 +8,18 @@ Bij de uitvoering hebben verschillende soorten overheidsorganisaties, uitvoering
 
 ## Scope
 
-Gebeurtenissen vinden continu en in allelei vormen plaats. Bij de start van het project Notificaties heeft een noodzakelijke afbakening plaatsgevonden. Het project richtte zich bijv. uitsluitend op geautomatiseerd notifceren van applicaties (en dus niet op notificeren van mensen). Wat overigens niet wil zeggen dat projectresultaten niet bruikbaar zijn voor zaken die buiten de projectscope vallen. U vindt een toelichting  in de notitie ['projectscope'](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/notificatieservices_scope.pdf).
+Gebeurtenissen vinden continu en in allelei vormen plaats. Bij de start van het project Notificaties heeft een noodzakelijke afbakening plaatsgevonden. Het project richtte zich bijv. uitsluitend op geautomatiseerd notifceren van applicaties (en dus niet op notificeren van mensen). Wat overigens niet wil zeggen dat projectresultaten niet bruikbaar zijn voor zaken die buiten de projectscope vallen. U vindt een toelichting  in de notitie ['projectscope'](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/notificatieservices_scope.pdf).
 
 ## Producten
 
 ### NL GOV profile for CloudEvents
 
-Het [NL GOV profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents/) is een specificatie voor het gestandaardiseerd beschrijven en uitwisselen van gegevens over plaatsgevonden gebeurtenissen. Het profiel bouwt voort op de [CloudEvents](https://cloudevents.io/) specificatie die is ontwikkeld door de [Serverless Working Group](https://github.com/cncf/wg-serverless) van de
+Het [NL GOV profile for CloudEvents](https://logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents/) is een specificatie voor het gestandaardiseerd beschrijven en uitwisselen van gegevens over plaatsgevonden gebeurtenissen. Het profiel bouwt voort op de [CloudEvents](https://cloudevents.io/) specificatie die is ontwikkeld door de [Serverless Working Group](https://github.com/cncf/wg-serverless) van de
 [Cloud Native Computing Foundation](https://www.cncf.io/). 
 
 De basis van CloudEvents is een specificatie voor het gestandaardiseerd beschrijven van gebeurtenisgegevens. Aanvullend daarop zijn (en worden) standaarden ontwikkeld die beschrijven hoe de specificatie is toe te passen bij gebruik van specifieke gegevensformaten en transportprotocollen. Doelstelling is om wereldwijd de [interoperabiliteit](https://nl.wikipedia.org/wiki/Interoperabiliteit) van services, platforms en voorzieningen te vergroten.
 
-Het [NL GOV profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents/) bevat afspraken over het gebruik van de CloudEvents-specificatie binnen de Nederlandse overheid. Bijvoorbeeld door af te spreken hoe overheidsorganisaties bepaalde attributen gebruiken. Zo maken we als overheid gebruik van internationale standaardisatie en vullen we die aan met afspraken die binnen de Nederlandse context nodig of wenselijk zijn. 
+Het [NL GOV profile for CloudEvents](https://logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents/) bevat afspraken over het gebruik van de CloudEvents-specificatie binnen de Nederlandse overheid. Bijvoorbeeld door af te spreken hoe overheidsorganisaties bepaalde attributen gebruiken. Zo maken we als overheid gebruik van internationale standaardisatie en vullen we die aan met afspraken die binnen de Nederlandse context nodig of wenselijk zijn. 
 
 ## Handreikingen
 
@@ -30,23 +30,23 @@ Binnen project Notificatieservices zijn naar aanleiding van de opgedane ervaring
 Onderstaande handreikingen beschrijven hoe het NL GOV profiel gestandaardiseerd is te gebruiken in combinatie met een
 aantal, ook binnen de overheid, gangbare gegevensformaten, transportprotocollen en patronen. Ze zijn te zien als een logisch verlengstuk van het NL GOV profiel bij het ontwerpen en realiseren van oplossingen. 
 
-- [JSON-gegevensformaat](https://github.com/VNG-Realisatie/NL-GOV-profile-for-CloudEvents/blob/main/NL-GOV-Guideline-for-CloudEvents-JSON.md)
-- [HTTP-protocol](https://github.com/VNG-Realisatie/NL-GOV-profile-for-CloudEvents/blob/main/NL-GOV-Guideline-for-CloudEvents-HTTP.md)
-- [Webhook interactiepatroon](https://github.com/VNG-Realisatie/NL-GOV-profile-for-CloudEvents/blob/main/NL-GOV-Guideline-for-CloudEvents-Webhook.md).
+- [JSON-gegevensformaat](https://github.com/Logius-standaarden/NL-GOV-profile-for-CloudEvents/blob/main/NL-GOV-Guideline-for-CloudEvents-JSON.md)
+- [HTTP-protocol](https://github.com/Logius-standaarden/NL-GOV-profile-for-CloudEvents/blob/main/NL-GOV-Guideline-for-CloudEvents-HTTP.md)
+- [Webhook interactiepatroon](https://github.com/Logius-standaarden/NL-GOV-profile-for-CloudEvents/blob/main/NL-GOV-Guideline-for-CloudEvents-Webhook.md).
 
 ### Functioneel
 
 Onderstaande handreikingen beschrijven op een toegankelijke manier een aantal belangrijke aspecten van gebeurtenisgedreven werken in het algemeen en notificeren in het bijzonder:
 
-- [Introductie van notificeren](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/introductie_van_notificeren.pdf)
-- [Het waarom van notificeren](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/waarom_notificeren.pdf)
-- [Definieren van gebeurtenistypes](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/gebeurtenistypes_definieren.pdf)
-- [Randvoorwaardelijke aspecten](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/randvoorwaarden_notificeren.pdf)
-- [Notificatiescenario's](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/notificatiescenarios.pdf)
+- [Introductie van notificeren](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/introductie_van_notificeren.pdf)
+- [Het waarom van notificeren](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/waarom_notificeren.pdf)
+- [Definieren van gebeurtenistypes]https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/gebeurtenistypes_definieren.pdf)
+- [Randvoorwaardelijke aspecten](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/randvoorwaarden_notificeren.pdf)
+- [Notificatiescenario's](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/notificatiescenarios.pdf)
 
 ### Architectuur
 
-De uitgebreide handreiking [Notificatieservices Architectuur](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/achtergronddocumentatie/notificatieservices_architectuur.pdf) beschrijft een breed scala aan architectuuraspecten met betrekking tot gebeurtenisgedreven werken. De handreiking is bedoeld om kennis die tijdens het project Notificatieservices is opgedaan beschikbaar te stellen voor toekomstig gebruik. Er is hierbij dankbaar gebruik gemaakt van wat wereldwijd aan kennis en ervaring op dit vlak bestaat.
+De uitgebreide handreiking [Notificatieservices Architectuur](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/achtergronddocumentatie/notificatieservices_architectuur.pdf) beschrijft een breed scala aan architectuuraspecten met betrekking tot gebeurtenisgedreven werken. De handreiking is bedoeld om kennis die tijdens het project Notificatieservices is opgedaan beschikbaar te stellen voor toekomstig gebruik. Er is hierbij dankbaar gebruik gemaakt van wat wereldwijd aan kennis en ervaring op dit vlak bestaat.
 
 ## Diversen
 
@@ -55,14 +55,14 @@ De uitgebreide handreiking [Notificatieservices Architectuur](https://github.com
 - [Werkgroep Berichtenstandaard presentaties](https://samenwerken.pleio.nl/groups/view/1fde4814-ec84-49bd-a67a-935eb712e7a2/notificatieservices/files/4ff096f5-ba66-4c60-a9d1-44dcd9798897): alle presentaties die gebruikt zijn tijdens
   de werkgroep waarmee de berichtenstandaard is ontwikkeld.
 - [Samenwerkingsruimte voor project Notificatieservices](https://samenwerken.pleio.nl/groups/view/1fde4814-ec84-49bd-a67a-935eb712e7a2/notificatieservices): de plaats waar in 2021 binnen het project met een commmunity van overheids- en uitvoeringsorganisaties en leveranciers is samengewerkt.
-- [Concept API-specificatie voor geautomatiseerd abonneren](https://github.com/VNG-Realisatie/notificatieservices/tree/main/docs/api-specification): een API die als onderdeel van een beproeving met VNG Realisatie is ontwikkeld in lijn met de concept CloudEvents-standaard voor geautomatiseerd abonneren op ontvangst van notificaties.
+- [Concept API-specificatie voor geautomatiseerd abonneren](https://github.com/Logius-standaarden/notificatieservices/tree/main/docs/api-specification): een API die als onderdeel van een beproeving met VNG Realisatie is ontwikkeld in lijn met de concept CloudEvents-standaard voor geautomatiseerd abonneren op ontvangst van notificaties.
 
 ## Informatie en vervolg
 
 Het project Notificatieservices is beeindigd per 30 juni 2022. Naar alle waarschijnlijkheid wordt het beheer van het NL GOV profiel en de ontwikkelde handreikingen binnenkort belegd bij een uitvoeringsorganisatie.
 
 Wilt u feedback geven of vragen stellen dan kunt u daarvoor gebruik maken van Github-issues. Omdat er nog geen strucureel beheer is geregeld kan het zijn dat er niet direct een reactie op volgt:
-- Issues m.b.t. project Notificiatieservices: https://github.com/VNG-Realisatie/notificatieservices/issues
-- Issues m.b.t. het NL GOV profile for CloudEvents: https://github.com/VNG-Realisatie/NL-GOV-profile-for-CloudEvents/issues/ 
+- Issues m.b.t. project Notificiatieservices: https://github.com/Logius-standaarden/notificatieservices/issues
+- Issues m.b.t. het NL GOV profile for CloudEvents: https://github.com/Logius-standaarden/NL-GOV-profile-for-CloudEvents/issues/ 
 
 
