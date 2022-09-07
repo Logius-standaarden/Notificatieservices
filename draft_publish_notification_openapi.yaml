@@ -7,7 +7,7 @@ info:
 
     Standards
     * [GOV NL API Design Rules](https://publicatie.centrumvoorstandaarden.nl/api/adr/#normative-design-rules)
-    * [GOV NL profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents).'
+    * [GOV NL profile for CloudEvents](https://Logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents).'
   license:
     name: EUPL 1.2
     url: https://opensource.org/licenses/EUPL-1.2

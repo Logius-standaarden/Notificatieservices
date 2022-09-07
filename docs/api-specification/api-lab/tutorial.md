@@ -3,7 +3,7 @@
 
 In deze tutorial configureren we de referentieimplementatie van de Notificatierouteringscomponent (NRC) voor het versturen en ontvangen van notificaties via de Gemeentelijke Generieke Notificatie API (gebaseerd op CloudEvents).
 
-Overal waar in deze tutorial het woord `notificatie` voorkomt kan ook het begrip `event` gelezen worden. De term `event` wordt gebruikt door de internationale CloudEvents standaard. 
+Overal waar in deze tutorial het woord `notificatie` voorkomt kan ook het begrip `event` gelezen worden. De term `event` wordt gebruikt door de internationale CloudEvents standaard.
 
 ## Wat zijn de vereisten voor deze tutorial?
 
@@ -43,11 +43,11 @@ Zoals in het notificatieproces beschreven is het registreren van een domein een 
 _Bijvoorbeeld: domein: nl.vng.zaken.leverancierX en dan als types: nl.vng.zaken.leverancierX.zaak_gesloten etc._
 
 Stappen:
-	
+
 1. Bepaal de naam van het domein. Voor bijvoorbeeld zaken is dit `nl.vng.zaken.leverancierX`.
 
 2. Zorg dat het domein bekend is bij het NRC. Je kan dit controleren door eerst de lijst met domeinen op te vragen:
- 
+
    ```http
    GET https://notificaties-api.test.vng.cloud/api/v1/domains HTTP/1.0
    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0ZXN0c3VpdGUiLCJpYXQiOjE2NTQwODk3NzAsImNsaWVudF9pZCI6Im5yYyIsInVzZXJfaWQiOiJ0ZXN0X3VzZXJfaWQiLCJ1c2VyX3JlcHJlc2VudGF0aW9uIjoiVGVzdCBVc2VyIn0.9CjhYTw-eREVXtdiTQbwyOsXAkAMln5sRj5lzmsaa1s
@@ -56,7 +56,7 @@ Stappen:
    ```json
    {
         "name": "nl.vng.zaken.leverancierX",
-        "documentationLink": "https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/api-specification/voorbeeld_documentatielink_zaken_domein.md",
+        "documentationLink": "https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/api-specification/voorbeeld_documentatielink_zaken_domein.md",
         "filterAttributes": [
             "bronorganisatie",
             "vertrouwelijkheidsaanduiding",
@@ -65,7 +65,7 @@ Stappen:
     }
    ```
    Als het domein bestaat, kun je aan de hand van de UUID van het domein, de details van het domein opvragen (in dit geval zou dat dan 8ce0ae0d-941f-406e-99c8-5f1ac7ebc699 zijn)
-   
+
    ```http
    GET https://notificaties-api.test.vng.cloud/api/v1/domains/8ce0ae0d-941f-406e-99c8-5f1ac7ebc699 HTTP/1.0
    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0ZXN0c3VpdGUiLCJpYXQiOjE2NTQwODk3NzAsImNsaWVudF9pZCI6Im5yYyIsInVzZXJfaWQiOiJ0ZXN0X3VzZXJfaWQiLCJ1c2VyX3JlcHJlc2VudGF0aW9uIjoiVGVzdCBVc2VyIn0.9CjhYTw-eREVXtdiTQbwyOsXAkAMln5sRj5lzmsaa1s   
@@ -80,7 +80,7 @@ Stappen:
 
     {
       "naam": "nl.vng.zaken.leverancierX",
-      "documentatieLink": "https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/api-specification/voorbeeld_documentatielink_zaken_domein.md",
+      "documentatieLink": "https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/api-specification/voorbeeld_documentatielink_zaken_domein.md",
       "filterAttributes": [
         "bronorganisatie",
         "zaaktype",
@@ -97,7 +97,7 @@ Stappen:
     POST https://notificaties-api.test.vng.cloud/api/v1/events HTTP/1.0
     Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ0ZXN0c3VpdGUiLCJpYXQiOjE2NTQwODk3NzAsImNsaWVudF9pZCI6Im5yYyIsInVzZXJfaWQiOiJ0ZXN0X3VzZXJfaWQiLCJ1c2VyX3JlcHJlc2VudGF0aW9uIjoiVGVzdCBVc2VyIn0.9CjhYTw-eREVXtdiTQbwyOsXAkAMln5sRj5lzmsaa1s
     Content-Type: application/json
-    
+
     {
         "id": "042eecb9-be40-4588-8c3c-8de1e0c27ae8",
         "specversion": "1.0",
@@ -115,7 +115,7 @@ Stappen:
 
 #### Ik wil als afnemer events ontvangen
 
-1. Zorg voor een endpoint om events te ontvangen. Gebruik bijvoorbeeld de [webhook-site](https://webhook.site) om events eenvoudig te ontvangen en bekijken. 
+1. Zorg voor een endpoint om events te ontvangen. Gebruik bijvoorbeeld de [webhook-site](https://webhook.site) om events eenvoudig te ontvangen en bekijken.
 
 **_Let op: Zorg dat het eindpoint als statuscode de code 204 retourneerd en niet de standaard 200._**
 
@@ -211,7 +211,7 @@ _n.b. In de voorbeelden is geen sink/eind-point ingevuld._
     "subscriberReference": "Ref"
     }
     ```
-	
+
 * `protocol`: Enige toegestane protocol is HTTP.
 
 * `protocolSettings`: Wordt gebruikt om headers door te sturen naar de afnemer.
@@ -233,20 +233,20 @@ _n.b. In de voorbeelden is geen sink/eind-point ingevuld._
 (
   (domain = nl.vng.zaken.leverancierX)
   AND
-  ( (type = nl.vng.zaken.leverancierX.zaak_gesloten) OR (type = nl.vng.zaken.leverancierX.zaak_geopend) ) 
+  ( (type = nl.vng.zaken.leverancierX.zaak_gesloten) OR (type = nl.vng.zaken.leverancierX.zaak_geopend) )
 )
-OR 
-( 
-  (domein = nl.vng.burgerzaken) AND (type = nl.vng.burgerzaken.kind_geboren_aangifte_elders) 
+OR
+(
+  (domein = nl.vng.burgerzaken) AND (type = nl.vng.burgerzaken.kind_geboren_aangifte_elders)
 )
 ```
-   Zie ook https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/api-specification/gedrag.md#beoordelen-filtercriteria.
+   Zie ook https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/api-specification/gedrag.md#beoordelen-filtercriteria.
 
 * `subscriberReference`: Deze referentie wordt opgenomen in events die doorgestuurd worden naar de afnemer op basis van dit abonnement. De afnemer kan deze informatie bijvoorbeeld gebruiken voor interne routering van het event.
-	
+
 4. Berichten worden nu naar je eigen endpoint gestuurd met een POST request
 
-    Hieronder staat een voorbeeld HTTP message zoals deze gepost wordt door de NRC op het end-point. 
+    Hieronder staat een voorbeeld HTTP message zoals deze gepost wordt door de NRC op het end-point.
 
    ```http
    POST <your end-point here> HTTP/1.0
@@ -255,7 +255,7 @@ OR
 
    {
    	"id": "042eecb9-be40-4588-8c3c-8de1e0c27ae8",
-	"data": 
+	"data":
 		{
 			"foo": "bar"
 		},
@@ -273,7 +273,6 @@ OR
 
 ## Postman scripts ##
 
-Om de API zelf te kunnen testen, zijn er enkele voorbeeld scripts gemaakt voor gebruik in Postman. 
+Om de API zelf te kunnen testen, zijn er enkele voorbeeld scripts gemaakt voor gebruik in Postman.
 
-Zie [Postman scripts](./Notificaties%20API-Lab.postman_collection.zip) voor Postman scripts 
-
+Zie [Postman scripts](./Notificaties%20API-Lab.postman_collection.zip) voor Postman scripts

@@ -1,6 +1,6 @@
-Op 15 en 16 juni 2022 heeft er een API-Lab plaatsgevonden bij VNG Realisatie in Utrecht. Het belangrijkste doel van dit API-Lab was om de ontwikkelde generieke gemeentelijke notificatie API te beproeven. 
+Op 15 en 16 juni 2022 heeft er een API-Lab plaatsgevonden bij VNG Realisatie in Utrecht. Het belangrijkste doel van dit API-Lab was om de ontwikkelde generieke gemeentelijke notificatie API te beproeven.
 
-Deze API is gebaseerd op de [NL GOV profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents/) en is een `generieke gemeentelijke implementatie`. Echter het lijkt dat deze implementatie wellicht ook in `landelijk perspectief` bruikbaar zou kunnen zijn.
+Deze API is gebaseerd op de [NL GOV profile for CloudEvents](https://Logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents/) en is een `generieke gemeentelijke implementatie`. Echter het lijkt dat deze implementatie wellicht ook in `landelijk perspectief` bruikbaar zou kunnen zijn.
 
 De deelnemers aan dit API-Lab waren:
 

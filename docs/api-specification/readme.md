@@ -1,6 +1,6 @@
 # Notifications API
 <!--
-*Let op! Het project Notificatieservices is beeindigd per 30 juni 2022. De documenten in de map 'api-specification' zijn gebruikt voor een beproeving in juni 2022 waarbij de bestaande ZGW-Notificatie-API (in beheer bij VNG Realisatie) is omgezet naar een generieke Notificatie-API conform het NL GOV profile for CloudEvents. Verdere ontwikkeling van deze API zal plaatsvinden in de [VNG-Realisatie/notificaties-api](https://github.com/VNG-Realisatie/notificaties-api) repository.* -->
+*Let op! Het project Notificatieservices is beeindigd per 30 juni 2022. De documenten in de map 'api-specification' zijn gebruikt voor een beproeving in juni 2022 waarbij de bestaande ZGW-Notificatie-API (in beheer bij VNG Realisatie) is omgezet naar een generieke Notificatie-API conform het NL GOV profile for CloudEvents. Verdere ontwikkeling van deze API zal plaatsvinden in de [Logius-standaarden/notificaties-api](https://github.com/Logius-standaarden/notificaties-api) repository.* -->
 
 Dit is een tijdelijke locatie om te kunnen werken aan API-specificatie voor een generieke notificatiecomponent.
 De API-specificatie is work in progress. _Alles kan nog op ieder moment wijzigen!_
@@ -8,10 +8,10 @@ De API-specificatie is work in progress. _Alles kan nog op ieder moment wijzigen
 ## Quick reference: OAS3 Specificaties
 
 API voor notificatie component:
-[ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/notificatieservices/main/docs/api-specification/notifications.yaml&nocors),[Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/notificatieservices/main/docs/api-specification/notifications.yaml)
+[ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/Logius-standaarden/notificatieservices/main/docs/api-specification/notifications.yaml&nocors),[Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/Logius-standaarden/notificatieservices/main/docs/api-specification/notifications.yaml)
 
 API voor notificatie client:
-[ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/notificatieservices/main/docs/api-specification/notifications_client.yaml&nocors),[Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/VNG-Realisatie/notificatieservices/main/docs/api-specification/notifications_client.yaml)
+[ReDoc](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/Logius-standaarden/notificatieservices/main/docs/api-specification/notifications_client.yaml&nocors),[Swagger](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/Logius-standaarden/notificatieservices/main/docs/api-specification/notifications_client.yaml)
 
 Aanvullende specificaties:
 - [Beschrijving gedrag](./gedrag.md)
@@ -19,7 +19,7 @@ Aanvullende specificaties:
 
 ## Toelichting
 
-Bovenstaande versie is nog geen officiele RC. Zie [backlog](https://github.com/VNG-Realisatie/notificatieservices/projects/1) voor de nog openstaande acties.
+Bovenstaande versie is nog geen officiele RC. Zie [backlog](https://github.com/Logius-standaarden/notificatieservices/projects/1) voor de nog openstaande acties.
 
 In eerdere versies was sprake van drie verschillende specificaties:
 - publiceren van events
@@ -32,14 +32,13 @@ We hebben daarom besloten de API specificatie echt specifiek uit te werken als g
 
 ### Documentatie
 
-- [Backlog](https://github.com/VNG-Realisatie/notificatieservices/projects/1)
+- [Backlog](https://github.com/Logius-standaarden/notificatieservices/projects/1)
 - [Samenvatting ontwerpbesluiten](./ontwerpbesluiten.md)
 - [Mapping op ZGW Notificatie Routing Component API](./mapping_zgw_nrc.md)
 
 ## Overige links
 
-- [GOV NL profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents)
+- [GOV NL profile for CloudEvents](https://Logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents)
 - [CloudEvents Subscription documentatie](https://github.com/cloudevents/spec/tree/main/subscriptions) incl. yaml voor CE subsciption
 - [ZGW Notificatie Routeringscomponent](https://notificaties-api.vng.cloud/)
-- [ZGW Notificatie Client Specificatie](https://vng-realisatie.github.io/gemma-zaken/standaard/notificaties-consumer/index)
-
+- [ZGW Notificatie Client Specificatie](https://Logius-standaarden.github.io/gemma-zaken/standaard/notificaties-consumer/index)

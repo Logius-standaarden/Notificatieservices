@@ -22,7 +22,7 @@ ZGW Attribuut | Events resource attribuut | Opmerkingen
 | :--- | :--- | :---
 hoofdobject | data.deprecated_hoofdObject | Dit is hoofdobject en niet de subresource. Voorbeeld: Zaak (en niet Status).
 resource    | data.deprecated_resource | Dit is, indien van toepassing, de naam van de subresource. Voorbeeld: Status.
-resourceUrl | data.deprecated_resourceUrl | Dit is, indien van toepassing, de uri van de subresource. 
+resourceUrl | data.deprecated_resourceUrl | Dit is, indien van toepassing, de uri van de subresource.
 
 Toelichting:
 Bij generiek gebruik van de API zullen er veel events zijn die impact hebben op meerdere resources. Bijvoorbeeld bij het ontstaan of registreren van een nieuw complex object met meerdere subresources. Er zijn dan twee opties: alle subresources vermelden of helemaal geen subresources vermelden. Er is gekozen voor het laatste. Ook voor de situaties waarin er 'toevallig' wel precies 1 (sub)resource wordt geraakt door het event.
@@ -31,8 +31,8 @@ Met deze werkwijze worden ook potentiele privacy issues voorkomen die ontstaan a
 
 ### Nieuwe attributen
 
-Onderstaande attributen zijn toegevoegd omdat ze onderdeel zijn van de CloudEvents berichtspecificatie. Zie het [GOV NL profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents/) voor meer informatie over de semantiek van deze attributen.
-  
+Onderstaande attributen zijn toegevoegd omdat ze onderdeel zijn van de CloudEvents berichtspecificatie. Zie het [GOV NL profile for CloudEvents](https://Logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents/) voor meer informatie over de semantiek van deze attributen.
+
 Events resource attribuut | Opmerkingen | Voorbeeld
 | :--- | :--- | :---
 specversion | CloudEvents versie | 1.0
@@ -42,7 +42,7 @@ datacontenttype | Contenttype van het data-attribuut | application/json
 dataschema | Optioneel schema dat de inhoud van het data-attribuut beschrijft | `https:www.vng.nl/zgw/zaken/status_gewijzigd_schema.json`
 sequence | Nummer voor ordening van de events | 42
 sequencetype | Datatype van sequence. Momenteel zijn alleen integers toegestaan | Integer
-dataref | Zie toelichting OAS en/of CE specificatie voor gebruik | 
+dataref | Zie toelichting OAS en/of CE specificatie voor gebruik |
 
 ## Abonnementen resource
 

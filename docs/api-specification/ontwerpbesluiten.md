@@ -6,10 +6,10 @@ Beknopte samenvatting van de belangrijkste ontwerpbesluiten.
 
 ### Events resource, overzicht van attributen
 
-Alle attributen volgen de [GOV NL profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents/) specificatie tenzij expliciet is aangegeven dat er een aanvulling of afwijking is. 
+Alle attributen volgen de [GOV NL profile for CloudEvents](https://Logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents/) specificatie tenzij expliciet is aangegeven dat er een aanvulling of afwijking is. 
 
 Attribuut           | Opmerkingen
-| :--- | :--- 
+| :--- | :---
 id                  | - (Initieel eis dat id een uuid MOET zijn, na overleg met Kadaster veranderd in SHOULD).
 source              | Formaat MOET URN zijn.
 specversion         | De OAS specificatie heeft al een versie numnmer. De CloudEvents versie zou afgeleid kunnen worden uit de beschrijving van de OAS. Om compatible te zijn met de CE berichtstandaard is besloten `specversion` toch expliciet op te nemen.
@@ -43,10 +43,10 @@ Er is besloten om geen onderverdeling aan te brengen binnen het data attribuut. 
 
 ### Subscription resource, overzicht van attributen
 
-Alle attributen volgen de draft specificatie van de CloudEvents subscription werkgroep tenzij expliciet is aangegeven dat er een aanvulling of afwijking is. 
+Alle attributen volgen de draft specificatie van de CloudEvents subscription werkgroep tenzij expliciet is aangegeven dat er een aanvulling of afwijking is.
 
 Attribuut           | Opmerkingen
-| :--- | :--- 
+| :--- | :---
 id                  | Formaat MOET UUID zijn.
 sinkcredential      | Alleen `ACCESSTOKEN` en `REFRESHTOKEN` zijn toegestaan. `PLAIN` niet.
 protocol            | Beperkt tot `HTTP`.

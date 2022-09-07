@@ -5,7 +5,7 @@ info:
 
     Work in progress. Can be changed completely without notice.
 
-    The events resource is based on the [GOV NL profile for CloudEvents](https://vng-realisatie.github.io/NL-GOV-profile-for-CloudEvents).
+    The events resource is based on the [GOV NL profile for CloudEvents](https://Logius-standaarden.github.io/NL-GOV-profile-for-CloudEvents).
     This specification only contains brief descriptions of the attributes of the event. Please refer to the GOV NL profile for additional information.
 
     This specification is work in progress. It can be changed completely without notice.

@@ -17,7 +17,7 @@ Regels:
   Voorbeeld: Stel `domain.filterAttributes = {bronorganisatie, vertrouwelijkheid}`. Stel er komt een event binnen met daarin de attributen `vertrouwelijkheid` en `test`. Het attribuut `vertrouwelijkheid` is toegestaan, `test` niet. Merk op dat niet alle bij het `domein` gespecificeerde `filterAttributen` in het event voor hoeven te komen.
 
 Wat we _NIET_ controleren:
-- `Domain` is eigenlijk een namespace. Eigenlijk zouden attributen zoals `type` moeten beginnen met het domein. (Voorbeeld: domain = nl.vng.zaken, type = nl.vng.zaken.status_gewijzigd) 
+- `Domain` is eigenlijk een namespace. Eigenlijk zouden attributen zoals `type` moeten beginnen met het domein. (Voorbeeld: domain = nl.vng.zaken, type = nl.vng.zaken.status_gewijzigd)
 - Domainspecifieke extension attributen zouden kunnen beginnen met het domein. Voorbeeld: nl.brp.bsn ipv bsn.
 - Of de `data` voldoet aan een eventueel opgegeven `dataschema`.
 
@@ -88,20 +88,20 @@ Als logische expressie ziet dit criterium er alsvolgt uit:
 
 ```
 (
-  domain = "nl.vng.zaken" 
-  and 
+  domain = "nl.vng.zaken"
+  and
   (
-    type = "nl.vng.zaken.status_gewijzigd" 
-    or 
+    type = "nl.vng.zaken.status_gewijzigd"
+    or
     type = "nl.vng.zaken.zaak_gesloten"
   )
 )
 
-or 
+or
 
 (
-  domain = "nl.vng.documenten" 
-  and 
+  domain = "nl.vng.documenten"
+  and
   vertrouwelijkheid = "normaal"
 )
 ```
@@ -162,11 +162,11 @@ vertaald naar een JSON-structuur krijgen we vervolgens:
 	]
 }
 ```
-Bovenstaande expressie kan gevalideerd worden in het van het OAS afgeleide [JSON schema](https://github.com/VNG-Realisatie/notificatieservices/blob/main/docs/api-specification/filters_schema.json). In deze laatste vorm zal de expressie aangeleverd moeten worden.
+Bovenstaande expressie kan gevalideerd worden in het van het OAS afgeleide [JSON schema](https://github.com/Logius-standaarden/notificatieservices/blob/main/docs/api-specification/filters_schema.json). In deze laatste vorm zal de expressie aangeleverd moeten worden.
 
 Waarschijnlijk is deze vorm door de CE werkgroep gekozen omdat de expressie in deze vorm direct uit te voeren is (en niet eerst geparseerd hoeft te worden). Het zou wel bijzonder handig zijn als er iets van een hulpmiddel zou komen waarmee logische expressie omgezet zouden kunnen worden in dit soort json structuren.
 
-n.b. 
+n.b.
 - De interne logica van subscriptions wordt niet gevalideerd. Het is dus mogelijk een syntactisch valide filter op te geven dat inhoudelijk zinloos is (en daardoor geen enkel event doorstuurt).
 - Operatoren zoals de `exact` mogen een lege value hebben. Het attribuut moet dan voorkomen EN leeg zijn.
 - Bij operatoren zoals de `exact` wordt case insensitive gezocht naar het attribuut. De vergelijking van de `value` gebeurt case sensitive.
@@ -178,7 +178,7 @@ Bij een post op de subscription resource moet o.a. het eindpoint (de sink) geval
 ```
 Delivering notifications
 - A delivery request MUST use a HTTP POST request via HTTPS.
-- A delivery response MUST have the appropriate status code: 
+- A delivery response MUST have the appropriate status code:
   - 200 OK of 200 Created if delivery had been accepted and processed and response carries a payload
   - 201 Created of 204 No Content when accepted and processed but carries no payload
   - 202 Accepted if accepted but not yet processed or processing status is unknown
@@ -204,6 +204,3 @@ It must be prevented that notifications are sent to recipients who have not requ
   - WebHook-Allowed-Origin (required): MUST either be the origin name supplied in the WebHook-Request-Origin header, or a singular asterisk character ('*'), indicating that the delivery target supports notifications from all origins.
   - WebHook-Allowed-Rate (depends): MUST be returned if the request contained the WebHook-Request-Rate, otherwise it SHOULD be returned; an integer number expresses the permitted request rate in "requests per minute" or asterisk when there is no rate limitation.
 ```
-
-
-
