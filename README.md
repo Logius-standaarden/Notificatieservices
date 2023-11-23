@@ -59,7 +59,7 @@ De uitgebreide handreiking [Notificatieservices Architectuur](https://github.com
 
 ## Informatie en vervolg
 
-Het project Notificatieservices is beeindigd per 30 juni 2022. Naar alle waarschijnlijkheid wordt het beheer van het NL GOV profiel en de ontwikkelde handreikingen binnenkort belegd bij een uitvoeringsorganisatie.
+Het project Notificatieservices is beeindigd per 30 juni 2022. Het profiel en ondersteunende documentatie is in beheer genmen door Logius.
 
 Wilt u feedback geven of vragen stellen dan kunt u daarvoor gebruik maken van Github-issues. Omdat er nog geen strucureel beheer is geregeld kan het zijn dat er niet direct een reactie op volgt:
 - Issues m.b.t. project Notificiatieservices: https://github.com/Logius-standaarden/notificatieservices/issues
